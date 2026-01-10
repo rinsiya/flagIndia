@@ -1,0 +1,50 @@
+body{
+
+    background-image: url('background.png'); /* path or URL to your image */
+  background-size: cover;     /* make it cover the entire page */
+  background-repeat: no-repeat; /* prevent tiling */
+  background-position: center center; /* center the image */
+  height: 100vh; /* ensure body takes full viewport height */
+  margin: 0;     /* remove default margin */
+}
+
+.pole {
+  position: relative;
+  width: 7px;
+  height: 460px;
+ 
+  margin: 30px auto;
+}
+
+
+
+#flag {
+  position: absolute;
+  bottom: 0;
+  top: 480px;
+  left: 15px;
+  transition: top 2s ease-in-out, width 2s ease-in-out;
+}
+
+@keyframes unfoldFlag {
+  0% { width: 15px; }
+  100% { width: 160px; }
+}
+
+.unfold-animate {
+  animation: unfoldFlag 3s forwards ease-in-out, clothWave 1.5s 3s infinite ease-in-out;
+
+}
+
+/* Waving */
+.wave {
+  animation: clothWave 1.5s infinite ease-in-out;
+}
+
+@keyframes clothWave {
+  0% { transform: perspective(800px) rotateY(0deg); }
+  25% { transform: perspective(800px) rotateY(-10deg); }
+  50% { transform: perspective(800px) rotateY(0deg); }
+  75% { transform: perspective(800px) rotateY(10deg); }
+  100% { transform: perspective(800px) rotateY(0deg); }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flag Unfold Animation</title>
+  <link rel="stylesheet" href="style.css">
+     <script>
+      function raiseFlag() {
+  const flag = document.getElementById("flag");
+ const img = document.getElementById("flag");
+ const audio = document.getElementById("anthem");
+  audio.play();
+   audio.playbackRate = 1.5;
+  // Start first transition: width
+  flag.style.top= "0px";
+
+  // Listen for the first transition to finish
+  flag.addEventListener("transitionend", function handler(event) {
+    if (event.propertyName === "top") {
+      // Start second transition: height
+img.src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
+       flag.classList.add("unfold-animate");
+
+flag.style.width = "160px";
+
+
+  // Start waving after unfolding
+  setTimeout(() => {
+    flag.classList.add("wave");
+  }, 3000);
+}})
+}
+
+    </script>
+</head>
+<body>
+
+<div class="pole">
+ 
+  <img id="flag" src="tied-flag.png">
+</div>
+
+<button onclick="raiseFlag()">Raise Flag</button>
+<audio id="anthem" src="anthem.mp3"></audio>
+</body>
+</html>
