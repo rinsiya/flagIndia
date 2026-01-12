@@ -16,14 +16,23 @@ body{
   margin: 30px auto;
 }
 
-
-
+#button{
+    position: fixed;
+    right: 200px;
+    top: 460px;
+    padding: 10px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(61, 105, 248);
+    color: #fff;
+}
 #flag {
   position: absolute;
   bottom: 0;
   top: 480px;
-  left: 15px;
-  transition: top 2s ease-in-out, width 2s ease-in-out;
+  left: 0px;
+  transition: top 4s ease-in-out, width 2s ease-in-out;
 }
 
 @keyframes unfoldFlag {

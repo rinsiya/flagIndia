@@ -17,7 +17,7 @@
   flag.addEventListener("transitionend", function handler(event) {
     if (event.propertyName === "top") {
       // Start second transition: height
-img.src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
+img.src="flag.gif"
        flag.classList.add("unfold-animate");
 
 flag.style.width = "160px";
@@ -39,7 +39,7 @@ flag.style.width = "160px";
   <img id="flag" src="tied-flag.png">
 </div>
 
-<button onclick="raiseFlag()">Raise Flag</button>
+<button onclick="raiseFlag()" id="button">Raise Flag</button>
 <audio id="anthem" src="anthem.mp3"></audio>
 </body>
 </html>
