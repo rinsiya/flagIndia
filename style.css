@@ -5,23 +5,24 @@ body{
   background-repeat: no-repeat; /* prevent tiling */
   background-position: center center; /* center the image */
   height: 100vh; /* ensure body takes full viewport height */
+  width: 100vw;
   margin: 0;     /* remove default margin */
 }
 
 .pole {
   position: relative;
-  width: 7px;
-  height: 460px;
+  width: 0vw;
+  height: 80vh;
  
   margin: 30px auto;
 }
 
 #button{
     position: fixed;
-    right: 200px;
-    top: 60px;
+    right: 20vw;
+    top: 66vh;
     background-color: #e50303;
-    padding: 10px;
+    padding: 3vh;
     color: #fff;
     font-weight: bolder;
     border-radius: 10px;
@@ -35,8 +36,8 @@ button:hover{
 #flag {
   position: absolute;
   bottom: 0;
-  top: 480px;
-  left: 15px;
+  top: 80vh;
+  left: 1vh;
   transition: top 4s ease-in-out, width 2s ease-in-out;
 }
 
