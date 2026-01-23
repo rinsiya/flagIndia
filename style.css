@@ -11,9 +11,10 @@ body{
 
 .pole {
   position: relative;
-  width: 1vw;
+  width: 0vw;
   height: 70vh;
-   margin: 8vh 50vw;
+ 
+  margin: 8vh 50vw;
 }
 
 #button{
