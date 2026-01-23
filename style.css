@@ -4,22 +4,21 @@ body{
   background-size: cover;     /* make it cover the entire page */
   background-repeat: no-repeat; /* prevent tiling */
   background-position: center center; /* center the image */
-  min-height: 100vh; /* ensure body takes full viewport height */
+  height: 100vh; /* ensure body takes full viewport height */
   min-width: 100vw;
   margin: 0;     /* remove default margin */
 }
 
 .pole {
   position: relative;
-  width: 0vw;
+  width: 1vw;
   height: 70vh;
- 
-  margin: 30px auto;
+   margin: 8vh 50vw;
 }
 
 #button{
     position: fixed;
-    right: 28vw;
+    right: 18vw;
     top: 75vh;
     background-color: #e50303;
     padding: 3vh;
@@ -40,8 +39,8 @@ button:hover{
   position: absolute;
   bottom: 0;
   top: 80vh;
-  left: 1vh;
-  transition: top 4s ease-in-out, width 2s ease-in-out;
+  left: 2vh;
+  transition: top 8s ease-in-out, width 2s ease-in-out;
 }
 
 @keyframes unfoldFlag {
